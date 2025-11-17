@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7ec;
+    font-family: Arial, sans-serif; /* fuente de sistema temporal */
+    color: #a23c72;
+    text-align: center;
+}
+
+.error-text {
+    font-size: 100px;
+    font-weight: bold;
+    animation: bounce 1s ease;
+}
+
+.mensaje {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.boton-inicio {
+    margin-top: 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #a23c72;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton-inicio:hover {
+    background-color: #8b2e5a;
+    transform: translateY(-3px);
+}
+
+/* Animación rebote */
+@keyframes bounce {
+    0% { transform: scale(0.8); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    70% { transform: scale(0.95); }
+    100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .error-text { font-size: 60px; }
+    .mensaje { font-size: 20px; }
+    .boton-inicio { padding: 10px 20px; }
+}
+
+@media (max-width: 480px) {
+    .error-text { font-size: 40px; }
+    .mensaje { font-size: 18px; }
+    .boton-inicio { padding: 8px 16px; }
+}
+@font-face {
+            font-family:'titulos';
+            src: url(Titulo.ttf);
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7ec;
+            font-family: 'titulos', sans-serif;
+            color: #a23c72;
+            text-align: center;
+        }
+
+        .error-text {
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .error-text {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .error-text {
+                font-size: 40px;
+            }
+        }
+.logo {
+    width: 15%;
+}
